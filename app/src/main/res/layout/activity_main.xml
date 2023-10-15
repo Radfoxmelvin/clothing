@@ -33,6 +33,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#9C27B0"
+        android:fontFamily="cursive"
         android:text="@string/g2l_clothing"
         android:textColor="#F8F5F5"
         android:textSize="20sp"

@@ -5,30 +5,29 @@ import com.example.clothing.model.Category
 
 object DataServices{
 
-    val  category = listOf(
-        Category("Red","dress01,dress06,dress09"),
-        Category("Blue","dress07,dress02,dress09"),
-        Category("Other Colors","dress03,dress04,dress05"),
-        Category("Hats","hat05,hat09,hat02",)
+    val  categories = listOf(
+        Category("Red","reddress01"),
+        Category("Blue","blu01"),
+        Category("Other Colors","pinkdress"),
+        Category("Hats","hatpng")
 
     )
 
     val blueDress = listOf(
-        Product("Blue1","R499.99","dress07"),
-        Product("Blue2","R379,99","dress02"),
-        Product("Blue","R289,99","dress09")
+        Product("Blue traditional(African01)","R499.99","blue02"),
+        Product("Sky blue stylish","R379,99","blue03"),
+        Product("Blue and red stripe","R289,99","blu01")
 
     )
     val otherColors= listOf(
-        Product("Color01","R599.99","dress07"),
-        Product("Color02","R479,99","dress02"),
-        Product("Color3","R689,99","dress09")
+        Product("Purple","R599.99","pinkdress"),
+        Product("Green","R479,99","greendress")
 
     )
     val hats= listOf(
-        Product("Unit","R150","hat05"),
-        Product("Hat set 01","R340","hat09"),
-        Product("Hat set 02","R289,99","hat02")
+        Product("Unit","R150","hatpng"),
+        Product("Hat set 01","R340","hatcol01"),
+        Product("Hat set 02","R289,99","hatcol02")
 
     )
 }

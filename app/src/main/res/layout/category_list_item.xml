@@ -8,36 +8,22 @@
     <ImageView
         android:id="@+id/categoryImage"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LogoText"
-        tools:srcCompat="@drawable/dress01" />
-
-    <TextView
-
-        android:id="@+id/LogoText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="#9C27B0"
-        android:fontFamily="cursive"
-        android:text="@string/g2l_clothing"
-        android:textColor="#F8F5F5"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/reddress01" />
 
     <TextView
         android:id="@+id/categoryName"
-        android:layout_width="0dp"
-        android:layout_height="58dp"
+        android:layout_width="334dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
         android:fontFamily="casual"
         android:text="@string/red_dresses"
         android:textAlignment="center"

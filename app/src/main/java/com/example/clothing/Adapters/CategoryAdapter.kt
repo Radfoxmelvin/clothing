@@ -12,9 +12,7 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.clothing.R
 import com.example.clothing.model.Category
 
-class CategoryAdapter(context:Context,categories: List<Category>):BaseAdapter() {
-    val context = context
-    val categories=categories
+class CategoryAdapter(val context: Context, val categories: List<Category>):BaseAdapter() {
     override fun getCount(): Int {
         return categories.count()
     }

@@ -2,9 +2,12 @@ package com.example.clothing.Controller
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.LinearLayout
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
 //import android.widget.ArrayAdapter
 import com.example.clothing.Adapters.CategoryAdapter
+import com.example.clothing.Adapters.CategoryRecycleAdapter
 //import com.example.clothing.R
 import com.example.clothing.Services.DataServices
 import com.example.clothing.databinding.ActivityMainBinding
@@ -12,8 +15,9 @@ import com.example.clothing.databinding.ActivityMainBinding
 //import com.example.clothing.model.bindo
 
 class MainActivity : AppCompatActivity() {
-    //lateinit var adapter: ArrayAdapter<Category>
-    lateinit var adapter: CategoryAdapter
+    //(1)lateinit var adapter: ArrayAdapter<Category>
+//  (2)  lateinit var adapter: CategoryAdapter
+    lateinit var adapter: CategoryRecycleAdapter
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,19 +28,27 @@ class MainActivity : AppCompatActivity() {
         setContentView(tione)
 
 
-//        adapter = ArrayAdapter(
+// (1)       adapter = ArrayAdapter(
 //            this,
 //            android.R.layout.simple_list_item_1, DataServices.categories
 //        )
-        adapter=CategoryAdapter(this,DataServices.categories)
-         setContentView(binding.root)
-         binding.categoryListView.adapter=adapter
+//   (2)     adapter=CategoryAdapter(this,DataServices.categories)
+//         setContentView(binding.root)
+//         binding.categoryListView.adapter=adapter
 
-        binding.categoryListView.setOnItemClickListener{adapterView,view,i,l->
+        adapter= CategoryRecycleAdapter(this,DataServices.categories)
+        setContentView(binding.root)
+        binding.categoryListView.adapter=adapter
 
-            val category = DataServices.categories[i]
-            Toast.makeText(this,"You have clicked on ${category.title} cell",Toast.LENGTH_SHORT).show()
-        }//(Iyi inondzi LIST VIEW method, but iyihayizi prefered method over RECYCLER VIEW METHOD
+        val layoutManager = LinearLayoutManager(this)
+            binding.categoryListView.layoutManager = layoutManager
+            binding.categoryListView.setHasFixedSize(true)
+
+//  (1)      binding.categoryListView.setOnItemClickListener{adapterView,view,i,l->
+//
+//            val category = DataServices.categories[i]
+//            Toast.makeText(this,"You have clicked on ${category.title} cell",Toast.LENGTH_SHORT).show()
+//        }//(Iyi inondzi LIST VIEW method, but iyihayizi prefered method over RECYCLER VIEW METHOD
 
         }
 

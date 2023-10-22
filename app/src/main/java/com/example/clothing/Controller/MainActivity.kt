@@ -1,5 +1,6 @@
 package com.example.clothing.Controller
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.LinearLayout
@@ -10,6 +11,7 @@ import com.example.clothing.Adapters.CategoryAdapter
 import com.example.clothing.Adapters.CategoryRecycleAdapter
 //import com.example.clothing.R
 import com.example.clothing.Services.DataServices
+import com.example.clothing.Utilities.EXTRA_CATEGORY
 import com.example.clothing.databinding.ActivityMainBinding
 //import com.example.clothing.model.Category
 //import com.example.clothing.model.bindo
@@ -36,7 +38,12 @@ class MainActivity : AppCompatActivity() {
 //         setContentView(binding.root)
 //         binding.categoryListView.adapter=adapter
 
-        adapter= CategoryRecycleAdapter(this,DataServices.categories)
+        adapter= CategoryRecycleAdapter(this,DataServices.categories){category ->
+            //println(category.title)
+            val productIntent=Intent(this, ProductActivity::class.java)
+            productIntent.putExtra(EXTRA_CATEGORY,category.title)
+            startActivity(productIntent)
+        }
         setContentView(binding.root)
         binding.categoryListView.adapter=adapter
 

@@ -10,9 +10,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.clothing.R
 import com.example.clothing.model.Category
 
-class CategoryRecycleAdapter(val context: Context,val categories:List<Category>):RecyclerView.Adapter<CategoryRecycleAdapter.holder>() {
+class CategoryRecycleAdapter(val context: Context,val categories:List<Category>,val itemClick: (Category)->Unit):RecyclerView.Adapter<CategoryRecycleAdapter.holder>() {
 
-    inner class holder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class holder(itemView: View,val itemClick: (Category) -> Unit) : RecyclerView.ViewHolder(itemView) {
 
         val categoryImage = itemView?.findViewById<ImageView>(R.id.categoryImage)
         val categoryName = itemView?.findViewById<TextView>(R.id.categoryName)
@@ -21,6 +21,7 @@ class CategoryRecycleAdapter(val context: Context,val categories:List<Category>)
            val resourceId = context.resources.getIdentifier(category.image,"drawable",context.packageName)
             categoryImage?.setImageResource(resourceId)
             categoryName?.text = category.title
+            itemView.setOnClickListener{itemClick(category)}
         }
 
     }
@@ -28,7 +29,7 @@ class CategoryRecycleAdapter(val context: Context,val categories:List<Category>)
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): holder {
         val view = LayoutInflater.from(context)
             .inflate(R.layout.category_list_item,parent,false)
-        return holder(view)
+        return holder(view,itemClick)
     }
 
     override fun getItemCount(): Int {

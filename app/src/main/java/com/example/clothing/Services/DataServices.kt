@@ -11,13 +11,22 @@ object DataServices{
         Category("Other Colors","pinkdress"),
         Category("Hats","hatpng"),
         Category("Red01","reddress01"),
-    Category("Blue01","blu01"),
-    Category("Other Colors01","pinkdress"),
-    Category("Hats01","hatpng")
+        Category("Blue01","blu01"),
+        Category("Other Colors01","pinkdress"),
+        Category("Hats01","hatpng")
 
     )
 
     val blueDress = listOf(
+        Product("Blue traditional(African01)","R499.99","blue02"),
+        Product("Sky blue stylish","R379,99","blue03"),
+        Product("Blue and red stripe","R289,99","blu01"),
+        Product("Blue traditional(African01)","R499.99","blue02"),
+        Product("Sky blue stylish","R379,99","blue03"),
+        Product("Blue and red stripe","R289,99","blu01"),
+        Product("Blue traditional(African01)","R499.99","blue02"),
+        Product("Sky blue stylish","R379,99","blue03"),
+        Product("Blue and red stripe","R289,99","blu01"),
         Product("Blue traditional(African01)","R499.99","blue02"),
         Product("Sky blue stylish","R379,99","blue03"),
         Product("Blue and red stripe","R289,99","blu01")
@@ -25,30 +34,101 @@ object DataServices{
     )
     val otherColors= listOf(
         Product("Purple","R599.99","pinkdress"),
+        Product("Green","R479,99","greendress"),
+        Product("Purple","R599.99","pinkdress"),
+        Product("Green","R479,99","greendress"),
+        Product("Purple","R599.99","pinkdress"),
+        Product("Green","R479,99","greendress"),
+        Product("Purple","R599.99","pinkdress"),
+        Product("Green","R479,99","greendress"),
+        Product("Purple","R599.99","pinkdress"),
+        Product("Green","R479,99","greendress"),
+        Product("Purple","R599.99","pinkdress"),
+        Product("Green","R479,99","greendress"),
+        Product("Purple","R599.99","pinkdress"),
+        Product("Green","R479,99","greendress"),
+        Product("Purple","R599.99","pinkdress"),
+        Product("Green","R479,99","greendress"),
+        Product("Purple","R599.99","pinkdress"),
         Product("Green","R479,99","greendress")
 
     )
-    val hats= listOf(
+    val hatsForSale= listOf(
+        Product("Unit","R150","hatpng"),
+        Product("Hat set 01","R340","hatcol01"),
+        Product("Hat set 02","R289,99","hatcol02"),
+        Product("Unit","R150","hatpng"),
+        Product("Hat set 01","R340","hatcol01"),
+        Product("Hat set 02","R289,99","hatcol02"),
+        Product("Unit","R150","hatpng"),
+        Product("Hat set 01","R340","hatcol01"),
+        Product("Hat set 02","R289,99","hatcol02"),
+        Product("Unit","R150","hatpng"),
+        Product("Hat set 01","R340","hatcol01"),
+        Product("Hat set 02","R289,99","hatcol02"),
         Product("Unit","R150","hatpng"),
         Product("Hat set 01","R340","hatcol01"),
         Product("Hat set 02","R289,99","hatcol02")
 
     )
 
-    val Red = listOf(
-        Product("Pojok Red","R750","reddress02"),
-        Product("Linga Dress","R840","dress03"),
-        Product("Hat set 02","R989,99","dress01")
+    val RedDresses = listOf(
+        Product("Pojok Red","R750","reddress03"),
+        Product("Linga Dress","R840","reddress01"),
+        Product("Hat set 02","R989,99","reddess02"),
+        Product("Pojok Red","R750","reddress01"),
+        Product("Linga Dress","R840","reddress01"),
+        Product("Hat set 02","R989,99","reddress01"),
+        Product("Pojok Red","R750","reddress01"),
+        Product("Linga Dress","R840","reddress01"),
+        Product("Hat set 02","R989,99","reddress01"),
+        Product("Pojok Red","R750","reddress01"),
+        Product("Pojok Red","R750","reddress03"),
+        Product("Linga Dress","R840","reddress01"),
+        Product("Hat set 02","R989,99","reddess02"),
+        Product("Pojok Red","R750","reddress01"),
+        Product("Linga Dress","R840","reddress01"),
+        Product("Hat set 02","R989,99","reddress01"),
+        Product("Pojok Red","R750","reddress01"),
+        Product("Linga Dress","R840","reddress01"),
+        Product("Hat set 02","R989,99","reddress01"),
+        Product("Pojok Red","R750","reddress01")
 
     )
 
     val blueDress01 = listOf(
         Product("Blue traditional(African01)","R499.99","blue02"),
         Product("Sky blue stylish","R379,99","blue03"),
-        Product("Blue and red stripe","R289,99","blu01")
+        Product("Blue and red stripe","R289,99","blu01"),
+        Product("Pojok Red","R750","reddress02"),
+        Product("Linga Dress","R840","dress03"),
+        Product("Hat set 02","R989,99","dress01"),
+        Product("Pojok Red","R750","reddress02"),
+        Product("Linga Dress","R840","dress03"),
+        Product("Hat set 02","R989,99","dress01"),
+        Product("Pojok Red","R750","reddress02"),
+        Product("Linga Dress","R840","dress03"),
+        Product("Hat set 02","R989,99","dress01"),
+        Product("Pojok Red","R750","reddress02"),
+        Product("Linga Dress","R840","dress03"),
+        Product("Hat set 02","R989,99","dress01")
 
     )
     val otherColors01= listOf(
+        Product("Purple","R599.99","pinkdress"),
+        Product("Green","R479,99","greendress"),
+        Product("Purple","R599.99","pinkdress"),
+        Product("Green","R479,99","greendress"),
+        Product("Purple","R599.99","pinkdress"),
+        Product("Green","R479,99","greendress"),
+        Product("Purple","R599.99","pinkdress"),
+        Product("Green","R479,99","greendress"),
+        Product("Purple","R599.99","pinkdress"),
+        Product("Green","R479,99","greendress"),
+        Product("Purple","R599.99","pinkdress"),
+        Product("Green","R479,99","greendress"),
+        Product("Purple","R599.99","pinkdress"),
+        Product("Green","R479,99","greendress"),
         Product("Purple","R599.99","pinkdress"),
         Product("Green","R479,99","greendress")
 
@@ -56,21 +136,53 @@ object DataServices{
     val hats01= listOf(
         Product("Unit","R150","hatpng"),
         Product("Hat set 01","R340","hatcol01"),
+        Product("Hat set 02","R289,99","hatcol02"),
+        Product("Unit","R150","hatpng"),
+        Product("Hat set 01","R340","hatcol01"),
+        Product("Hat set 02","R289,99","hatcol02"),
+        Product("Unit","R150","hatpng"),
+        Product("Hat set 01","R340","hatcol01"),
+        Product("Hat set 02","R289,99","hatcol02"),
+        Product("Unit","R150","hatpng"),
+        Product("Hat set 01","R340","hatcol01"),
         Product("Hat set 02","R289,99","hatcol02")
 
     )
-    val digitalGoods = listOf<Product>()
-    fun getProducts(category:String):List<Product>{
+    val RedDresses01 = listOf(
+        Product("Pojok Red","R750","reddress03"),
+        Product("Linga Dress","R840","reddress01"),
+        Product("Hat set 02","R989,99","reddess02"),
+        Product("Pojok Red","R750","reddress01"),
+        Product("Linga Dress","R840","reddress01"),
+        Product("Hat set 02","R989,99","reddress01"),
+        Product("Pojok Red","R750","reddress01"),
+        Product("Linga Dress","R840","reddress01"),
+        Product("Hat set 02","R989,99","reddress01"),
+        Product("Pojok Red","R750","reddress01"),
+        Product("Pojok Red","R750","reddress03"),
+        Product("Linga Dress","R840","reddress01"),
+        Product("Hat set 02","R989,99","reddess02"),
+        Product("Pojok Red","R750","reddress01"),
+        Product("Linga Dress","R840","reddress01"),
+        Product("Hat set 02","R989,99","reddress01"),
+        Product("Pojok Red","R750","reddress01"),
+        Product("Linga Dress","R840","reddress01"),
+        Product("Hat set 02","R989,99","reddress01"),
+        Product("Pojok Red","R750","reddress01")
+
+    )
+   // val digitalGoods = listOf<Product>()
+    fun getProducts(category: String?):List<Product>{
         return when(category){
             "Hats01" ->  hats01
             "Other Colors01"->  otherColors01
             "Blue01"-> blueDress01
-            "Red"->  Red
-            "Red01"->  Red
-            "hats"-> hats
+            "Red"-> RedDresses//(NB:-"Red"==category and "RedDress"==products)
+            "Red01"-> RedDresses01
+            "Hats"-> hatsForSale
             "Other Colors" -> otherColors
             "Blue" -> blueDress
-            else -> return digitalGoods
+            else -> return RedDresses
         }
     }
 }

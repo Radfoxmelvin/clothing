@@ -18,7 +18,7 @@
         app:layout_constraintTop_toBottomOf="@+id/LogoText" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/categoryListView"
+        android:id="@+id/productListView"
         android:layout_width="0dp"
         android:layout_height="563dp"
         android:layout_marginTop="32dp"
